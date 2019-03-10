@@ -10,9 +10,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.0-preview-20181205-02" />
-    <PackageReference Include="xunit" Version="2.4.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.0-preview3.19153.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0-preview3.19153.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0-preview3.19153.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.0.0-preview3.19153.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\learning-test-driven-development.console\learning-test-driven-development.console.csproj" />
+    <ProjectReference Include="..\learning-test-driven-development.ui\learning-test-driven-development.ui.csproj" />
+    <ProjectReference Include="..\learning-test-driven-development\learning-test-driven-development.csproj" />
   </ItemGroup>
 
 </Project>

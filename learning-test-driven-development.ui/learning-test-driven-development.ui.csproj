@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+	  <NullableContextOptions>enable</NullableContextOptions>
+	  <LangVersion>8.0</LangVersion>
+	  <RootNamespace>learning_test_driven_development.ui</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UI.xaml" />
+  </ItemGroup>
+
+</Project>
